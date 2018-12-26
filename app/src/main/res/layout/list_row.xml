@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#c0c0c0">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical" tools:padding="10dp"
+                tools:theme="@android:style/Animation.Dialog"
+                android:background="@android:color/background_light"
+                android:layout_above="@+id/relative2"
+                android:id="@+id/relative">
+
+            <TextView
+                    android:text="textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" app:fontFamily="@font/amita_bold"
+                    android:textColor="@color/colorAccent" android:capitalize="words"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="2dp"
+                        android:id="@+id/relative2"
+                        android:layout_below="@+id/relative"
+                        android:background="@color/colorPrimaryDark">
+            <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/view4"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
